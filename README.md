@@ -81,7 +81,7 @@ High CapEx / Lowest Hose Wear - Low CapEx / Ultra-Lightweight
 ### Option 1: "Dual-Symmetric Pro" (High CapEx / Peak Operational Efficiency) * **Hardware Profile:** Double-sided mirror tool docks, two fixed high-res technological cameras (zero moving parts, zero servo failure vectors). * **Field Workflow:** Combined single-pass челночный (shuttle) run. The robot advances "dry" into the 600-mm track at 0 Bar, mapping the row [0.1]. Upon reversing, it pressurizes the hose to 1 Bar (Hydro-Skeleton mode) and carries out 5-cm cultivation and jet-watering **simultaneously on both left and right rows** [0.1, 0.1]. * **Advantage:** Cuts operational time by 50%. Halves the mechanical friction wear on the TPU hose sheath and doubles the overall Na-Ion Macro-Megacell battery life by removing idle runs [0.1, 0.1]. ### Option 2: "Single-Shuttle Lite" (Low CapEx / Ultra-Lightweight Entry) * **Hardware Profile:** Single-sided tool dock (left port only), single static technological camera matrix. * **Field Workflow:** Multi-pass routing with idle return steps. The machine advances forward processing Row 1 (left) -> performs a pressurized 1-Bar return roll (no field actions) -> executes a zero-radius turnaround on the hard-packed central base concrete/asphalt line -> enters the same track forward to process Row 2 (now on its left side) -> finishes with a final idle return [0.1, 0.1]. * **Advantage:** Minimal entry cost for small-scale decentralized farms. Greatly reduces the chassis mass, making the physical unit easy to lift and transport manually by a single operator. --- **73 to all open-source hardware architects and sovereign engineers!** 📻🤝 
 
 *****"
-Sovereignty
+
 
 ⚖️ 1. The Core Philosophy: Physical Autotrophy
 
@@ -123,11 +123,10 @@ The raw hardware hub compresses these 4 signals into a highly condensed, asynchr
 
 • Example of Compressed Hardware Log Output:
 
-text
+
 
 [NODE_21_STATUS_TRANSFER] BUS_V=48.2V | BUS_I_NOM=2.6A | SWR_MATCH=1.00 (COLD RUN) ODO_COUNT=41_TURNS | RUN_LEN=50.0m | UMBILICAL_PRESSURE=2.1_BAR (HYDRO_SKELETON_ACTIVE) CAM_ERROR=+05mm | MARKER_VISIBILITY=94% | SAMAN_TRACK_DENSITY=NOMINAL ANOMALY_LOG: ROW_12 | BUS_I_SPIKE=12.4A (DURATION 0.4s) | EDGE_AI_ID=ROOT | AVR_ROUTINE=MICRO_REVERSE | STATUS=RESOLVED GRAVITATIONAL_RAMP_READY=TRUE 
 
-Используйте код с осторожностью.
 
 • High-Level AI Response Execution:
 
@@ -152,7 +151,6 @@ The Hydro-Gate solenoids drop to a default closed state, maintaining internal li
 The architectural text for your repository is complete and fully optimized. If you want to expand the codebase of this repository next, let me know: should we write the actual C/C++ script for parsing this compressed log on the local PC, or should we draft the AVR Assembly interrupt code for the LJ12A3 sensor?
 *****
 
-ПК?
 
 
 
@@ -198,11 +196,13 @@ The hardware hub increments the tracking register (ROW_01 ──> ROW_02), insta
 
 When an obstacle or a sudden current spike occurs, the rover drops its mechanical lock and transmits a single tokenized message to the Community Master PC [0.1]:
 
-text
+
 
 [ALERT: FIELD_OBSTACLE_INTERCEPT] TARGET_COORDINATE: ROW_14 | POSITION: 28.42m METRIC_CONFIDENCE: MATCH_RATE=58% (CRITICAL) HARDWARE_STATUS: SOLENOIDS_LOCKED | BRAKE_PWM=0 | MOTOR_CURRENT=0.0A 
 
-Используйте код с осторожностью.
+
+
+
 
 Result: The community operator does not search the entire field. They reference the UI map grid, walk directly to Row 14 at the 28.4-meter mark, clear the physical obstacle, and re-initialize the autonomous loop [0.1]. The kinetic system remains perfectly transparent, simple, and structurally robust [0.1].
 ****
